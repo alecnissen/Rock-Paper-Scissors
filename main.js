@@ -49,7 +49,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
        
       div.textContent = "You win! Paper beats rock";
       playerScore++
-      resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+      resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`; 
       // container.appendChild(div); 
       // document.body.append(container); 
       
@@ -58,7 +58,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
          // console.log("You win! Scissors beats paper"); 
         div.textContent = "You win! Scissors beats paper";
         playerScore++
-      resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+      resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;  
       // container.appendChild(div); 
       // document.body.append(container); 
       
@@ -67,7 +67,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
         // console.log("You win! Rock beats scissors"); 
          div.textContent = "You win! Rock beats scissors";
          playerScore++
-        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;  
          // container.appendChild(div); 
          // document.body.append(container); 
         
@@ -76,7 +76,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
         // console.log("You lose! Paper beats rock");  
          div.textContent = "You lose! Paper beats rock"; 
         compScore++
-        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`; 
          // container.appendChild(div); 
          // document.body.append(container);
         // compScore++
@@ -85,7 +85,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
         
         div.textContent = "You lose! Scissors beats paper"; 
         compScore++
-        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`; 
          // container.appendChild(div); 
          // document.body.append(container);
          // compScore++ 
@@ -94,7 +94,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
       
          div.textContent = "You lose! Rock beats scissors"; 
         compScore++
-        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`; 
          // container.appendChild(div); 
          // document.body.append(container);
         // compScore++
@@ -109,7 +109,7 @@ let scissors = document.querySelector('.scissors-btn').addEventListener('click',
         // console.log("it's a tie!"); 
       
          div.textContent = "it's a tie!"; 
-        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`;
+        resultsDiv.textContent = 'player' + ' ' + ' = ' + `${playerScore}` + ' ' + 'comp' + ' ' + ' = ' + `${compScore}`; 
          // container.appendChild(div); 
          // document.body.append(container); 
       
@@ -131,17 +131,21 @@ function finalScore() {
 
  if (playerScore === 3) { 
  finalResultsDiv.textContent = 'player wins!';  
-   return;  
+ playerScore = 0; 
+ compScore = 0; 
+    // return playRound();  
   // finalResultsContainer.appendChild(finalResultsDiv); 
   //  document.body.append(finalResultsContainer);
 } else if (compScore === 3) {
   finalResultsDiv.textContent = 'comp wins!'; 
-  return; 
+  playerScore = 0; 
+  compScore = 0; 
+//    return playRound(); 
   // finalResultsContainer.appendChild(finalResultsDiv); 
   // document.body.append(finalResultsContainer); 
   } else { 
 // finalResultsDiv.textContent = "it's a tie!"; 
-    return; 
+    // return playRound(); 
 // finalResultsContainer.appendChild(finalResultsDiv); 
 //  document.body.append(finalResultsContainer);
 } 
