@@ -1,0 +1,67 @@
+.game-results { 
+    text-align: center; 
+    text-decoration: underline; 
+    font-size: 30px; 
+  }     
+  
+  .results-container { 
+    text-align: center; 
+  } 
+  
+  div { 
+  text-align: center;
+    margin: 10px; 
+    font-size: 25px; 
+  } 
+  
+  body { 
+  background-color: purple; 
+  } 
+  
+  .rock-btn { 
+    font-size: 25px; 
+  }
+  
+  .scissors-btn { 
+  font-size: 25px; 
+  } 
+  
+  .paper-btn { 
+  font-size: 25px;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .game-results { 
+    text-align: center; 
+    text-decoration: underline; 
+  }     
+  
+  .results-container { 
+    text-align: center; 
+  } */
